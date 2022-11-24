@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài Học Javascript</title>
+    <link rel="stylesheet" href="javascript.css">
+    <link rel="stylesheet" href="javascript_setting.css">
+</head>
+
+<body>
+    <section class="wrapper">
+        <div class="container">
+            <div class="javascript">
+                <h1>Giới thiệu về ngôn ngữ JavaScript</h1>
+            </div>
+            <div class="content">
+                <h2>JavaScript là gì?</h2>
+                <p>JavaScript là ngôn ngữ lập trình phổ biến dùng để tạo ra các trang web tương tác. Được tích hợp và
+                    nhúng vào HTML giúp
+                    website trở nên sống động hơn. JavaScript đóng vai trò như một phần của trang web, thực thi cho phép
+                    Client-Side Script
+                    từ phía người dùng cũng như phía máy chủ (Nodejs) tạo ra các trang web động.</p>
+                <img src="javascript.png" alt="">
+                <p>JavaScript là một ngôn ngữ lập trình thông dịch với khả năng hướng đến đối tượng. Là một trong 3 ngôn
+                    ngữ chính trong
+                    lập trình web và có mối liên hệ lẫn nhau để xây dựng một website sống động, chuyên nghiệp, bạn có
+                    thể nhìn tổng quan như
+                    sau:</p>
+                <ul>
+                    <li><code>HTML:</code>Cung cấp cấu trúc cơ bản, hỗ trợ trong việc xây dựng layout, thêm nội dung dễ
+                        dàng trên website.</li>
+                    <li><code>CSS:</code>Được sử dụng để kiểm soát và hỗ trợ việc định dạng thiết kế, bố cục, style, màu
+                        sắc,…</li>
+                    <li><code>JavaScript:</code>Tạo nên những nội dung “động” trên website.</li>
+                </ul>
+                <strong>Cùng tìm hiểu rõ hơn ở phần dưới đây:</strong>
+                <p>JS là viết tắt của JavaScript, khi có JS bạn sẽ hiểu đó đang nói đến JavaScript.</p>
+                <h2>Lịch sử phát triển của JavaScript</h2>
+                <p>
+                    JavaScript được phát tiển bởi Brendan
+                    Eich tại hãng truyền thông Netscape với tên đầu tiên là Mocha. Sau đó, đổi tên thành
+                    LiveScript và cuối cùng là JavaSript được sử dụng phổ biến tới thời điểm bây giờ.
+                </p>
+                <p>Phiên bản mới nhất của JavaScript là ECMAScript (là phiên bản chuẩn hóa của JavaScript). Với
+                    ECMAScript 2 phát hành năm
+                    1998 và ECMAScript 3 được ra mắt năm 1999 và hoạt động mạnh mẽ trên mọi trình duyệt và các thiết bị
+                    khác nhau.</p>
+                <h2>Cách thức hoạt động của JavaScript trên trang web</h2>
+                <p>JavaScript thường sẽ được nhúng trực tiếp vào một trang web hoặc được tham chiếu qua file .js riêng.
+                    JavaScript là ngôn
+                    ngữ từ phía client nên script sẽ được tải về máy client khi truy cập và được xử lý tại đó. Thay vì
+                    tải về máy server và
+                    sau khi xử lý xong mới phản hồi kết quả đến client.</p>
+                <img src="cachhoatdong.jpeg" alt="">
+                <p>Với hiện nay, thì các trình duyệt Internet cũng có thể hỗ trợ bạn tắt/mở JavaScript. Lúc đó bạn có
+                    thể thấy được nếu một
+                    trang web không có JavaScript thì sẽ như thế nào? Từ đó bạn có thể hình dung dễ dàng hơn về cách
+                    JavaScript hoạt động.</p>
+                <h2>Điểm khác biệt JavaScript với các ngôn ngữ lập trình</h2>
+                <p>JavaScript được đóng vai trò như là ngôn ngữ chính trong lập trình web, ngoài ra các lập trình viên
+                    cũng cần sự kết hợp
+                    và áp dụng một số ngôn ngữ khác trong quá trình làm việc của mình như:</p>
+                <ul>
+                    <li><code>JavaScript:</code>JS giúp tăng tính tương tác trên website. Các Script chạy trên các trình
+                        duyệt của người dùng thay vì từ phía server và
+                        thường được sử dụng thư viện từ bên thứ 3 nên không cần bạn phải code lại từ đầu.</li>
+                    <li><code>HTML:</code> Hypertext Markup Language, đây là ngôn ngữ cơ bản và phổ biến mà bạn cần phải
+                        biết khi bắt đầu với công việc lập trình
+                        web. Dùng để xây dựng bố cục (layout) chính cho nội dung toàn bộ website.</li>
+                    <li><code>CSS :</code> Cascadding Style Sheets giúp cho lập trình viên xác định style, tạo ra những
+                        ý
+                        tưởng, màu sắc, background riêng phù hợp
+                        với chủ đề của website.</li>
+                    <li><code>PHP:</code> Là ngôn ngữ từ phía server (JS chạy trên phía client). Thường dùng trong quá
+                        trình quản trị nội dung nền PHP như Wordpress
+                        và cũng có thể được sử dụng
+                        với Backend
+                    </li>
+                </ul>
+                <h2>Cách sử dụng JavaScript</h2>
+                <h3>Mở đóng thẻ</h3>
+                <p>Tất cả các đoạn mã JavaScript đều được đặt trong cặp thẻ đóng mở script /script. Ví dụ cụ thể như
+                    sau:</p>
+                <pre>
+                    <code><span><</span>script language <span>=</span><span>"javascript"</span><span>></span></span>
+                    <span>alert</span>("hello world");
+                    <span><</span><span>/</span><span>script</span><span>></span> </code> 
+            </pre>
+                <h2>Chúng ta có thể đặt thẻ <span>script</span> bên trong thẻ < head> hoặc vào bất cứ vị trí nào mong
+                        muốn bên trong thẻ < body>.</h2>
+            </div>
+            <div class="chromedevtools">
+                <h1>Sử dụng Chome DevTool</h1>
+                <h2>Tổng quan về Chrome DevTools</h2>
+                <p>Chrome Developer Tools (gọi tắt là DevTools), là một tập hợp các tác giả web và công cụ debugging
+                    được tích hợp vào
+                    Google Chrome. DevTools cung cấp cho các Web developers truy cập sâu hơn vào bên trong trình duyệt
+                    và ứng dụng web của
+                    họ. Sử dụng DevTools có tác dụng theo dõi một cách hiệu quả các vấn đề về bố trí để có thể giảm
+                    thiểu các vấn đề đó
+                    trong phần mềm, đặt các điểm dừng JavaScript và có được hiểu biết để tối ưu hóa cho code.</p>
+                <h2>Cách truy cập DevTools</h2>
+                <p>Để truy cập đến DevTools, mở một trang Web hoặc ứng dụng Web trong Google Chrome, cụ thể như sau:</p>
+                <p>Chọn Menu Chrome ở phía trên góc phải cửa sổ trình duyệt của bạn, sau đó chọn Tools -> Developer
+                    Tools.</p>
+                <img src="unnamed.jpg" alt="">
+                <ul>
+                    <li>Trên một trang bất kỳ, nhấp phải chuột trên một yếu tố và chọn Inspect Element.</li>
+                    <li>
+                        <p>Cửa sổ DevTools sẽ được mở ở phía dưới trình duyệt của bạn</p>
+                    </li>
+                </ul>
+                <ul>
+                    <li>Sử dụng Ctrl+Shift+I (hoặc Cmd+Opt+I trên Mac) để mở DevTools.</li>
+                    <li>Sử dụng Ctrl+Shift+J (hoặc Cmd+Opt+J trên Mac) để mở DevTools và tập trung đến Console.</li>
+                    <li>Sử dụng Ctrl+Shift+C (hoặc Cmd+Shift+C trên Mac) để mở DevTools trong Inspect Element mode, hoặc
+                        tắt Inspect Element
+                        mode nếu DevTools đang được mở.</li>
+                </ul>
+                <h2>Cửa sổ DevTools</h2>
+                <p>DevTools được tổ chức thành các nhóm task theo định hướng trong thanh công cụ ở phía trên cùng của
+                    cửa sổ. Mỗi thanh
+                    công cụ và bảng điều khiển tương ứng cho phép bạn làm việc với một loại hình cụ thể của trang hoặc
+                    thông tin ứng dụng
+                    bao gồm cả các yếu tố DOM, resources, and sources.
+                </p>
+                <p>Nhìn chung có 8 nhóm Tool chính là có sẵn để view Developer Tools:</p>
+                <ul>
+                    <li>Elements</li>
+                    <li>Resources</li>
+                    <li>Network</li>
+                    <li>Timeline</li>
+                    <li>Profiles</li>
+                    <li>Audits</li>
+                    <li>Console</li>
+                </ul>
+            </div>
+            <div class="javascriptdata">
+                <h1>Các kiểu dữ liệu trong JavaScript</h1>
+                <p>JavaScript có <strong>8 kiểu dữ liệu cơ bản</strong>, trong đó, có 7 kiểu dữ liệu nguyên thủy (
+                    <strong>boolean, null, undefined, number, BigInt,
+                        string, symbol</strong> ) và 1 kiểu dữ liệu dạng tham chiếu (object).
+                </p>
+                <ul>
+                    <li><strong>Kiểu dữ liệu nguyên thủy:</strong>là kiểu dữ liệu mà giá trị không thể thay đổi được.
+                        Đây là kiểu dữ liệu ứng với "level thấp nhất" của ngôn ngữ lập
+                        trình.</li>
+                    <li><strong>Kiểu dữ liệu tham chiếu</strong> là tập hợp của các thuộc tính (key) và giá trị (value).
+                        Mà số lượng các key có thể thay đổi, giá trị ứng với key cũng có
+                        thể thay đổi. Do đó, giá trị của kiểu dữ liệu tham chiếu có thể thay đổi được.</li>
+                </ul>
+                <h2>Kiểu dữ liệu boolean (kiểu logic)</h2>
+                <p>Boolean là kiểu dữ liệu logic chỉ bao gồm hai giá trị là true (đúng, chính xác) và false (sai, không
+                    chính xác), ví dụ:</p>
+                <pre><code>let isWebLoaded = true;</code>  // => Trang web đã được tải xong
+                    <code>console.log(isWebLoaded);</code> // true</pre>
+                <pre><code>let isWebLoaded = true;</code>  // => Trang web đã được tải xong
+                    <code>console.log(isWebLoaded);</code> // true</pre>
+                <h2>Kiểu dữ liệu null</h2>
+                <p>Kiểu dữ liệu null là một kiểu dữ liệu đặc biệt, chỉ bao gồm một giá trị là null, ví dụ:</p>
+                <pre>
+                <code><span>let language = null;</span></code>
+                <code><span>console.log(language); // null</span></code>
+                </pre>
+                <p>Trong ví dụ trên, biến language được hiểu là không biết giá trị hoặc không có giá trị.</p>
+                <h2>Kiểu dữ liệu undefined</h2>
+                <p>Cũng tương tự như null, undefined là một kiểu dữ liệu đặc biệt trong JavaScript, chỉ bao gồm một giá
+                    trị undefined, ví
+                    dụ:</p>
+                <pre><code>
+                <span>let language = undefined;</span>
+                <span>console.log(language);</span></code>// undefined</pre>
+                <p>Kiểu dữ liệu undefined có nghĩa là giá trị chưa được gán.</p>
+                <div class="underfined">
+                    <p>Khác nhau cơ bản giữa undefined và null:</p>
+                    <li>Kiểu dữ liệu null là kiểu dữ liệu được gán cho biến, thường được hiểu là không biết (không có).
+                    </li>
+                    <li>Trong khi đó, kiểu dữ liệu undefined là giá trị mặc định của biến sau khi khai báo mà không gán
+                        giá trị cho biến.</li>
+                </div>
+                <h2>Kiểu dữ liệu number</h2>
+                <p>Kiểu dữ liệu number là kiểu dữ liệu dạng số (tương tự trong toán học). Number trong JavaScript không
+                    có cú pháp gì đặc
+                    biệt. Bạn chỉ cần viết số ra.</p>
+                <p>JavaScript có hai loại số là: số nguyên và số thực.</p>
+                <br>
+                <pre>
+                <code><span>let n1 = 66;</span>// số nguyên dương</code>
+                <code><span>let n2 = -66;</span>// số nguyên âm</code>
+                <code><span>let n3 = 3.14</span>// số thực dương</code>
+                <code><span>let n4 = -3.14;</span>// số thực âm</code>
+                <code><span>let n5 = 2e3</span>// => 2*10^3 = 2000</code>
+                <code><span>let n6 = 2e-3;</span>// => 2*10^(-3) = 0.002</code>
+                <code><span>let n7 = 0xff;</span>số dạng hexa (hệ cơ số 16): 15*16 + 15 = 255</code>
+                <code><span>let n8 = 067;</span>số dạng octa (hệ cơ số 8): 6*8 + 7 = 55</code>
+                <code><span>let n9 = 0b11;</span>số dạng nhị phân (hệ cơ số 2): 1*2 + 1 = 3</code>
+                </pre>
+                <p>Ngoài những loại số trên, JavaScript còn có 3 số đặc biệt là: <strong>Infinity, -Infinity và
+                        NaN.</strong></p>
+                <ul>
+                    <li><strong>Infinity</strong> là số dương vô cùng. Đây là giá trị đặc biệt và nó lớn hơn bất kỳ số
+                        nào khác. Bạn có thể sử dụng giá trị này trực tiếp
+                        hoặc thu được nó bằng cách lấy lấy số dương bất kỳ chia cho 0 (toán tử chia trong JavaScript là
+                        /).</li>
+                    <li><strong>-Infinity</strong> là số âm vô cùng. Đây cũng là giá trị đặc biệt và nó nhỏ hơn bất kỳ
+                        số nào khác. Bạn có thể sử dụng giá trị này trực
+                        tiếp hoặc thu được nó bằng cách lấy lấy số âm bất kỳ chia cho 0.</li>
+                    <li><strong>NaN</strong> là viết tắt của Not a Number, được sử dụng để đại diện cho những trường hợp
+                        tính toán sai hoặc kết quả của một phép tính
+                        không xác định.</li>
+                </ul>
+                <h2>Kiểu dữ liệu BigInt</h2>
+                <p>Trong JavaScript, kiểu dữ liệu number không thể biểu diễn một số nguyên lớn hơn (253-1) (bằng
+                    9007199254740991) và nhỏ
+                    hơn -(253-1).</p>
+                <p>Với hầu hết các trường hợp, việc sử dụng kiểu dữ liệu number là quá đủ. Nhưng đôi khi, bạn vẫn cần
+                    biểu diễn và tính
+                    toán với những số nguyên cực kỳ lớn. Do đó, kiểu dữ liệu BigInt ra đời nhằm giải quyết vấn đề này.
+                </p>
+                <p>Ví dụ</p>
+                <pre>
+                    <code><span>const reallyBigNumber = 12345678987654321012345678987654321n;</span></code>
+                    <code><span>console.log(reallyBigNumber);</span>  // 12345678987654321012345678987654321n</code>
+                </pre>
+                <h2>Kiểu dữ liệu string</h2>
+                <p>String là kiểu dữ liệu dùng để biểu diễn chữ, văn bản, đoạn văn bản,...</p>
+                <p>Có ba cách để biểu diễn string trong JavaScript:</p>
+                <ul>
+                    <li>Dùng dấu nháy đơn (')</li>
+                    <li>Dùng dấu nháy kép (")</li>
+                    <li>Dùng dấu "backtick" (`)</li>
+                </ul>
+                <p>Dấu nháy đơn và dấu nháy kép là hoàn toàn giống nhau.</p>
+                <p>Riêng với dấu "backtick", bạn có thể sử dụng biến, hằng hoặc thậm chí viết một biểu thức trong đó,
+                    với cú pháp ${…}</p>
+                <h2>Kiểu dữ liệu symbol</h2>
+                <p>Symbol là một kiểu dữ liệu nguyên thủy dùng để tạo ra các giá trị duy nhất (unique value) và bất biến
+                    (immutable).
+                    Symbol thường được dùng làm key cho kiểu dữ liệu object sau đây. (Chúng ta sẽ tìm hiểu sâu hơn về
+                    Symbol trong các bài
+                    viết sau)</p>
+                <h2>Kiểu dữ liệu object</h2>
+                <p>Object là kiểu dữ liệu tham chiếu. Có thể hiểu object là một tập hợp gồm các cặp key - value (khóa -
+                    giá trị).</p>
+                <p>Trong đó, kiểu dữ liệu của key có thể là string hoặc symbol. Và value ứng với key có thể là bất kỳ
+                    kiểu dữ liệu nào.
+                    (Chúng ta sẽ tìm hiểu sâu hơn về Object ở các bài sau)</p>
+
+            </div>
+
+        </div>
+    </section>
+</body>
+
+</html>
